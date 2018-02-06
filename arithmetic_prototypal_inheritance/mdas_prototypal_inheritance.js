@@ -22,6 +22,11 @@ var Mdas = {
 		return (this.valid_operation()) ? this.compute[this.operator[this.operator.indexOf(this.operation)]].call(this) : "Please choose valid operation[*, /, +, -]";
 	}
 }
-
-var mdas_1 = Object.create(Mdas);
-mdas_1.init(100,10,"-").answer();
+var mdas_multiplication = Object.create(Mdas);
+console.log(mdas_multiplication.init(100,10,"*").answer());
+var mdas_division = Object.create(Mdas);
+console.log(mdas_division.init(100,10,"/").answer());
+var mdas_addition = Object.create(Mdas);
+console.log(mdas_addition.init(100,10,"+").answer());
+var mdas_subtraction = Object.create(Mdas);
+console.log(mdas_subtraction.init(100,10,"-").answer());
